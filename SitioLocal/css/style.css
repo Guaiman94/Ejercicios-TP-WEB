@@ -1,0 +1,15 @@
+/*////////////////////////////////////
+============== RESET ================
+///////////////////////////////////*/
+*{margin:0; box-sizing: border-box;}
+
+img{max-width: 100%;}
+
+*{
+    list-style: none;
+    padding:0;
+    text-decoration: none ;
+}
+
+ul{list-style: none; padding: 0;}
+a{text-decoration: none;}
