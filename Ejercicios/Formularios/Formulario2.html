@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Formulario2</title>
+</head>
+<body>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Información del usuario</legend>
+            <label for="usuario">Escribe tu usuario: </label>
+            <input type="text" name="usuario" id="nombre" maxlength="16"  size="16" placeholder="Escribe tu usuario"></br></br>
+
+            <label for="contrasenia">Escribe tu contraseña: </label>
+            <input type="password" name="contrasenia" required placeholder="Escribe tu contraseña"></br></br>
+
+            <fieldset>
+                <legend>Información del extra usuario</legend>
+                <p>Aficiones</p>
+                    <input type="checkbox" name="aficiones" id="musica" value="musica">
+                    <label for="musica">Música </label></br></br>
+                    <input type="checkbox" name="aficiones" id="anime" value="anime">
+                    <label for="anime">Anime </label></br></br>
+                    <input type="checkbox" name="aficiones" id="videojuegos" value="videojuegos">
+                    <label for="videojuegos">Videojuegos </label></br></br>
+                    <input type="checkbox" name="aficiones" id="series" value="series">
+                    <label for="series">Series </label></br></br>
+
+                    <label for="lenguajes">Lenguajes de programacion: </label>
+                    <select name="ciudades" id="ciudades">
+                        <option value="huelva">Huelva</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="almeria">Almaría</option>
+                    </select>
+                    </br></br>
+            </fieldset></br></br>
+
+            <input type="reset">
+            <input type="submit"  value="Enviar todos los datos">
+        </fieldset>
+    </form>
+</body>
+</html>
