@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Con el método GET los datos son visibles en la URL sin embargo con el POST se mantienen ocultos, por defecto se usa el método POST-->
+    <!--Con size el campo se ajusta al número de caracteres-->
+    <!--Con MAXLENGTH te dice el número de caracteres que encaja-->
+    <!--REQUIRED convierte un campo en obligatorio-->
+    <!--Value te pone un valor por defecto, cuando escribes un dato y restableces vuelves al valor por defecto.-->
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Datos del formulario</legend>
+            <label for="nombre">Escribe tu nombre: </label>
+            <input type="text" name="nombre" id="nombre" maxlength="16"  size="16" placeholder="Escribe tu nombre" value="Sergio"></br></br>
+
+            <label for="contrasenia">Escribe tu contraseña: </label>
+            <input type="password" name="contrasenia" required placeholder="Escribe tu contraseña"></br></br>
+
+            <label for="email">Escribe tu email: </label>
+            <input type="email" name="email" placeholder="Escribe tu email"></br></br>
+            
+            <input type="radio" name="genero" id="hombre" value="hombre">
+            <label for="hombre">Hombre </label></br></br>
+
+            <input type="radio" name="genero" id="mujer" value="mujer">
+            <label for="mujer">Mujer </label></br></br>
+
+            <input type="checkbox" name="idiomas" id="espaniol" value="espaniol">
+            <label for="espaniol">Español </label></br></br>
+            <input type="checkbox" name="idiomas" id="ingles" value="ingles">
+            <label for="ingles">Español </label></br></br>
+            <input type="checkbox" name="idiomas" id="frances" value="frances">
+            <label for="frances">Español </label></br></br>
+
+            <input type="file" name="archivo"></br></br>
+
+            <label for="lenguajes">Lenguajes de programacion: </label>
+            <select name="lenguajes" id="lenguajes">
+                <option value="java">Java</option>
+                <option value="phph">PHP</option>
+                <option value="csharp">Csharp</option>
+                <option value="python">Python</option>
+            </select>
+            </br></br>
+
+            <input list="lenguajes2" name="lenguajes2">
+            <datalist id="lenguajes2">
+                <option value="java"></option>
+                <option value="chsarp"></option>
+                <option value="python"></option>
+            </datalist>
+
+            <input type="reset"></br></br>
+            <input type="submit"  value="Enviar todos los datos"></br></br>
+        </fieldset>
+    </form>
+</body>
+</html>
