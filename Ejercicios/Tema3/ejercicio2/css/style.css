@@ -1,0 +1,41 @@
+.title{
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.span__uno{
+    color: black;
+    font-weight: bold;
+}
+
+.span__dos{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.span__tres{
+    text-decoration: line-through;
+}
+
+.span__cuatro{
+    text-decoration: underline;
+}
+
+
+.span__cinco{
+    background-color: yellow;
+}
+
+.span__seis{
+    color: black;
+    font-weight: bold;
+}
+
+.span__siete{
+    font-style: oblique;
+}
+
+.margen__p{
+    margin-left: 100px;
+}
