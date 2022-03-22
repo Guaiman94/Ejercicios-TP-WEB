@@ -1,0 +1,15 @@
+fieldset {
+    width: 30%;
+}
+
+.title::before{
+    content: url(../img/tik.png);
+}
+
+.parrafouno::first-letter{
+    font-size: 30px;
+}
+
+.parrafouno{
+    color: red;
+}

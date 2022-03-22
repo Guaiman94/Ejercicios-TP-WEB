@@ -1,0 +1,30 @@
+.table, .table__border, .border__file{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+.table2, .table__border2, .border__file2{
+    border: 1px solid black;
+    border-collapse: collapse;   
+}
+
+.without__border{
+    border: none;
+}
+
+
+.table__without--border {
+    border:0; 
+    background-color: green;
+}
+
+
+.table__border2:nth-child(even){
+    background-color: aqua;
+}
+
+.table__border2:nth-child(odd){
+    background-color: red;
+}
