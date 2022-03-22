@@ -3,7 +3,12 @@ fieldset {
 }
 
 .title::before{
-    content: url(../img/tik.png);
+    content:"";
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/tik.png);
+    background-size: cover;
+    display: inline-block;
 }
 
 .parrafouno::first-letter{

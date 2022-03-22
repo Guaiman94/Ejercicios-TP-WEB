@@ -10,7 +10,6 @@ ul{list-style: none; padding: 0;}
 
 .menu__ul{
     display: flex;
-    padding: 15px;
     background-color: gray;
     cursor: pointer;
 }
