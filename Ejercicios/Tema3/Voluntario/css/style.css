@@ -10,7 +10,6 @@ ul{list-style: none; padding: 0;}
 
 .menu__ul{
     display: flex;
-    padding: 15px;
     background-color: gray;
     cursor: pointer;
 }
@@ -26,6 +25,11 @@ ul{list-style: none; padding: 0;}
 .menu__li:hover{
     background-color: greenyellow;
 }
+
+.menu__li:active{
+    background-color: red;
+}
+
 
 .menu__enlace{
     outline: none;
