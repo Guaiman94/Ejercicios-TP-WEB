@@ -26,6 +26,11 @@ ul{list-style: none; padding: 0;}
     background-color: greenyellow;
 }
 
+.menu__li:active{
+    background-color: red;
+}
+
+
 .menu__enlace{
     outline: none;
     text-decoration: none;
