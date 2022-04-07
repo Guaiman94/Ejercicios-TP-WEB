@@ -1,0 +1,23 @@
+.imagen{
+    width: 100px;
+    height: 100px;
+    animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+
+@keyframes movimiento{
+        0% {right: 280px;}
+        10% {bottom: 100px;}
+        20% {top: 700px;}
+        30% {left: 250px;}
+        40% {bottom: 100px;}
+        50% {bottom: 750px;}
+        60% {top: 200px;}
+        70% {right: 600px;}
+        80% {left: 400px;}
+        90% {top: 300px;}
+        100% {left: 100px;}  
+}
