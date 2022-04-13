@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Cambio calor</title>
+</head>
+<body>
+    <p id="texto">Soy un texto que cambia de color: </p>
+    <input type="button" value="rojo" onclick="rojo()"/>
+    <input type="button" value="verde" onclick="verde()"/>
+    <input type="button" value="azul" onclick="azul()"/>
+
+    <script>
+        
+        function rojo(){
+            document.getElementById("texto").style.color = "red";
+        }
+        
+        function verde(){
+            document.getElementById("texto").style.color = "green";
+        }
+
+        function azul(){
+            document.getElementById("texto").style.color = "blue";
+        }
+
+    </script>
+</body>
+</html>

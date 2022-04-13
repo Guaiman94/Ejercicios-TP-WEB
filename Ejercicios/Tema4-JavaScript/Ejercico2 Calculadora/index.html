@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="text" id="n1" size="40" placeholder="Inserte el primer numero">
+    <input type="text" id="n2" size="40" placeholder="Inserte el segundo numero"> <br>
+
+    <br>
+
+    <input type="button" value="sumar" onclick="sumar()"/>
+    <input type="button" value="restar" onclick="restar()"/>
+    <input type="button" value="dividir" onclick="dividir()"/>
+    <input type="button" value="multiplicar" onclick="multiplicar()"/>
+    <input type="button" value="modulo" onclick="modulo()"/>
+
+    <br>
+    <br>
+    
+    <p id="texto"></p> 
+
+    <script>
+
+        function sumar(){
+            //n1 y n2 adquiere el valor 
+            n1 = document.getElementById("n1").value;
+            n2 = document.getElementById("n2").value;
+            let resultado = parseInt(n1) + parseInt(n2);
+            document.getElementById("texto").innerHTML = "El resultado es: " + resultado;
+        }
+
+        function restar(){
+            n1 = document.getElementById("n1").value;
+            n2 = document.getElementById("n2").value;
+            let resultado = parseInt(n1) - parseInt(n2);
+            document.getElementById("texto").innerHTML = "El resultado es: " + resultado;
+        }
+
+        function dividir(){
+            n1 = document.getElementById("n1").value;
+            n2 = document.getElementById("n2").value;
+            let resultado = parseInt(n1) / parseInt(n2);
+            document.getElementById("texto").innerHTML = "El resultado es: " + resultado;
+        }
+
+        function multiplicar(){
+            n1 = document.getElementById("n1").value;
+            n2 = document.getElementById("n2").value;
+            let resultado = parseInt(n1) * parseInt(n2);
+            document.getElementById("texto").innerHTML = "El resultado es: " + resultado;
+        }
+
+        function modulo(){
+            n1 = document.getElementById("n1").value;
+            n2 = document.getElementById("n2").value;
+            let resultado = parseInt(n1) % parseInt(n2);
+            document.getElementById("texto").innerHTML = "El resultado es: " + resultado;
+        }
+
+    </script>
+</body>
+</html>
