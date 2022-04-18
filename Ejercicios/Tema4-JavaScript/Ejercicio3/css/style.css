@@ -1,0 +1,82 @@
+@media screen and (max-width: 600px){
+    body{
+        background-color: red;
+    }
+
+    p{
+        font-size: 40px;
+    }
+}
+
+.opacidad{
+    opacity: 0.5;
+}
+
+.opacidad2{
+    opacity: 1;
+    padding: 20px;
+    background-color: rgba(0, 255, 0, 0.5);
+    /*Adaptar una img a su contenedor
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: fill;
+
+    Desplazar la img
+    object-position: ;*/
+}
+
+.filtros{
+    filter: grayscale(100%);
+    /*filter: blur(5px);*/
+    /*filter: brightness(15%);*/
+    /*filter: contrast(30%);*/
+    /*filter: hue-rotate(190deg);
+    filter: invert(150%);*/
+    /*filter: saturate(50%);*/
+    /*filter: sepia(30%);*/
+    width: 300px;
+    height: 600px;
+}
+
+
+@keyframes cambiacolor{
+    /*from {background-color: red;}
+    to {background-color: blue;}*/
+
+    0% {background-color: red; left: 0px}
+    50% {background-color: yellow;}
+    75% {left: 150px;}
+    100% {background-color: blue;}
+}
+
+.animacion1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    animation-name: cambiacolor;
+    animation-duration: 5s;
+    /*animation-iteration-count: infinite;*/
+    animation-delay: 2;
+   /*animation-direction: alternate;*/
+    position: relative;
+    animation-timing-function: ease-in ;
+    animation-fill-mode: forwards;
+}
+
+.transaccion{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: width 2s; background-color: 3s;
+    transform: translate(100px, 20px);
+    /*transform: translate(100px, 20px);*/
+    /*transform: rotate(45deg);*/
+    /*transform: skew(45deg, 0deg);*/
+}
+
+
+.transaccion:hover{
+    width: 200px;
+    background-color: lawngreen;
+}
+
