@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio10</title>
+</head>
+<body>
+
+
+
+    <script>
+       /*Crea este array:
+        let nombres = ["Cristina", "Sergio", "Carla", "Ayman", "Alvaro", "Carlos", "Julio", "Pedro",
+        "Antonio", "Alejandra"];*/
+    let nombres = ["Cristina", "Sergio", "Carla", "Ayman", "Alvaro", "Carlos", "Julio", "Pedro",
+    "Antonio", "Alejandra"];
+    let pos1 = 0;
+    let pos2 = 0;
+
+    do{
+        pos1 = parseInt(prompt("Dime la primera posición"));
+    }while(pos1<0 || pos1>=nombres.length);
+
+    do{
+        pos2 = parseInt(prompt("Dime la segunda posición"))
+    }while(pos2<0 || pos2>= nombres.length);
+
+    let aux = nombres[pos2];
+    nombres[pos1] = nombres[pos2];
+    nombres[pos2] = aux;
+    alert(nombres);
+    </script>
+</body>
+</html>

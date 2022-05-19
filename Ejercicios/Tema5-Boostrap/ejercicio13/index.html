@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para BT5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Ejercicio13</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="card" style="width:400px">
+            <img src="img/Alucard.jpg" class="card-img-top" style="width: 100%;">
+            <div class="card-body">
+                <h3 class="card-title">Alucard</h3>
+                <p class="card-text">Alucard es el protagonista de la serie de manga y anime Hellsing.</p>
+                <a href="#" class="card-link">Sigue a la organización Hellsing</a>
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle mt-5 float-end" data-bs-toggle="dropdown">Top 3 habilidades</button>
+                    <ul class="dropdown-menu">
+                        <li><h5 class="dropdown-header">Habilidades</h5></li>
+                        <li><a href="#" class="dropdown-item">Inmortalidad</a></li>
+                        <li><a href="#" class="dropdown-item">Vampirismo</a></li>
+                        <li><a href="#" class="dropdown-item">Asesino</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-footer d-grid">
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#textoEscondido">Mostrar Texto</button>
+                <div class="collapse" id="textoEscondido">
+                    <p>
+                        Tiene un gran parecido con Vincent Valentine, personaje de la saga de juegos Final Fantasy, ya que ambos visten de rojo, tienen cabello largo y negro, ojos característicos (los de vincent tienen el iris rojo), ambos usan pistolas como armas y son protagonistas (Vincent en un juego solo).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body> 
+</html>

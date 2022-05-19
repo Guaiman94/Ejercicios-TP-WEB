@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Ejercicio7</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+    <script>
+        
+        //Primera parte
+
+        let numeroPersonas = 0;
+
+        do{
+            numeroPersonas = parseInt(prompt("Dime un numero de personas"))
+            if (numeroPersonas < 0 || numeroPersonas >5){
+                alert("El numero de personas debe de estar entre 1 y 5");            }
+        } while(numeroPersonas < 0 || numeroPersonas > 5);
+
+        //Segunda parte
+        let nombreLargo = "";
+        let nMujeres = 0;
+        let nHombres = 0;
+        let mEdad = 0;
+
+        for(let i=0; i<numeroPersonas; i++){
+            let nombre = prompt("Dime el nombre" + i);
+            let genero = prompt("Dime el genero");
+            let edad = parseInt(prompt("Dime la edad"));
+
+            if(nombre.length > nombreLargo.length){
+                nombreLargo = nombre;
+            }
+
+            if (genero == "mujer"){
+                nMujeres++;
+            }else{
+                nHombres++;
+            }
+
+            mEdad += edad;
+
+        }
+
+        document.getElementById("parrafo").innerHTML = "El nombre más alrgo es " + nombreLargo + "<br>" 
+        + "Se han puesto " + nMujeres + "mujeres y " + nHombres + " hombres" + "<br>"
+        + "Y la media de la edad es de: " + (mEdad/numeroPersonas);
+
+
+    </script>
+</body>
+</html>

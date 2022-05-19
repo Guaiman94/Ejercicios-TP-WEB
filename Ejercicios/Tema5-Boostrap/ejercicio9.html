@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <script>
+        //Pide de la manera que quieras un número, después pide tantos nombres como el número que se te haya 
+        //dicho y guardalos en un array de String, después imprime dicho array.
+
+        let nombres = [];
+        let numero = parseInt(prompt("Dime un numero de personas"));
+
+        for (let i=0; i<numero; i++){
+            let nombre = prompt("Dime un nombre: ");
+            nombres.push(nombre);
+        }
+
+        alert(nombres);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Responsive</title>
+</head>
+<body>
+    <script>
+        //Primera parte
+        let num1 = 0;
+        let num2= 0;
+         
+         do{
+            num1 = parseInt(prompt("Dime el primer numero"));
+            num2 = parseInt(prompt("Dime el segundo numero"));
+        } while (num1 > num2);
+
+        //Segunda parte
+        let contadorPar = 0;
+        
+        for (let  i=num1; i<num2; i++){
+            if (i % 2 == 0){
+                contadorPar++;
+            }
+        }
+
+        alert("Hay " + contadorPar + " pares.")
+    </script>
+</body>
+</html>

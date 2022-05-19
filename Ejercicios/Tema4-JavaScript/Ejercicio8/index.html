@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+
+    <script>
+        let numeroPisos = parseInt(prompt("Dime el numero de pisos"));
+        let numeroCasas = parseInt(prompt("Dime el numero de casas"));
+
+        for (let i = 0; i<numeroPisos; i++){
+
+            for (let j = 0; j<numeroCasas; j++){
+                document.getElementById("parrafo").innerHTML += "|------|";
+            }
+            document.getElementById("parrafo").innerHTML +="<br>"
+
+            for (let j = 0; j<numeroCasas; j++){
+                document.getElementById("parrafo").innerHTML += " | &nbsp; &nbsp; &nbsp; &nbsp;|";
+            }
+            document.getElementById("parrafo").innerHTML +="<br>"
+
+            for (let j = 0; j<numeroCasas; j++){
+                document.getElementById("parrafo").innerHTML += " | &nbsp; &nbsp; &nbsp; &nbsp;|";
+            }
+            document.getElementById("parrafo").innerHTML +="<br>"
+
+        }
+    </script>
+</body>
+</html>
