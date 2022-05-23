@@ -1,0 +1,604 @@
+/*////////////////////////////////////
+============== RESET ================
+///////////////////////////////////*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/*//////////////////////////////////
+        PALETA DE COLOR 
+
+Naranja: #E66F43
+Azul oscuro: #0C0D0F
+Blanco: #FFFFFF
+
+//////////////////////////////////*/
+:root {
+  --naranja: #e66f43;
+  --azulOscuro: #0c0d0f;
+}
+
+/*---HEADER---*/
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  padding: 15px;
+  background-image: url(../img/5.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 75%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header__menu--flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header__burguer {
+  width: 40px;
+  height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+  position: relative;
+}
+
+.header__hamborgosa{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.header__burguerline{
+  width: 100%;
+  height: 3px;
+}
+
+.header__burguerline--mid {
+  width: 75%;
+  align-self: flex-end;
+}
+
+.header__menu {
+  position: relative;
+  z-index: 100;
+}
+
+.header__text {
+  color: white;
+  text-align: right;
+  position: relative;
+  z-index: 70;
+  margin-top: 15px;
+}
+
+.header__pildora {
+  display: flex;
+  position: relative;
+  z-index: 70;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+
+.header__pildora--a {
+  width: 120px;
+  padding: 10px;
+  background-color: var(--naranja);
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header__menumenu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--naranja);
+  top: 0px;
+  left: 0px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.header__menuli {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.header__menulia {
+  color: white;
+}
+
+.hide{
+  display: none;
+}
+
+.black{
+  background-color: black;
+}
+
+.orange{
+  background-color: var(--naranja);
+}
+
+/*-----MAIN-----*/
+
+/*---Nuestros valores-----*/
+.mainContainer__valores {
+  background-color: var(--naranja);
+  padding: 25px 15px 20px 15px;
+  text-align: center;
+}
+
+.mainContainer__valores--border {
+  border: 3px solid white;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.mainContainer__valores--title {
+  font-weight: 600;
+}
+
+.mainContainer__valores--item {
+  margin-top: 15px;
+  /*border: 2px solid red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer__valores--subtitle {
+  margin: 0 auto;
+  height: 52px;
+}
+/*---Fin de Nuestros valores-----*/
+
+/*---Obras-----*/
+.mainContainer__obra--item {
+  height: 180px;
+}
+
+/*
+.mainContainer__obra--text > h4{
+    font-weight: 600;
+}*/
+
+.mainContainer__obra--textTittle {
+  font-weight: 600;
+}
+
+.mainContainer__obra--text {
+  background-color: var(--azulOscuro);
+  padding: 15px;
+  text-align: center;
+}
+
+.mainContainer__obra--text:nth-child(2n - 1) {
+  background-color: var(--naranja);
+}
+/*2n llama a los hijos impares
+2n - 1 a los impares*/
+
+/*Redimensiono las fotos para que se ajuste al contenedor*/
+.mainContainer__obra--planrenfe {
+  background-image: url(../img/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainContainer__obra--abenhazan {
+  background-image: url(../img/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainContainer__obra--canada {
+  background-image: url(../img/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.mainContainer__obra--almendrales {
+  background-image: url(../img/4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/*---Fin de Obras-----*/
+
+/*----Nuestro equipo----*/
+.mainContainer__team {
+  background-color: var(--azulOscuro);
+  padding: 25px 15px 20px 15px;
+  text-align: center;
+}
+
+.mainContainer__team--title,
+.mainContainer__team--name {
+  font-weight: 600;
+}
+
+.mainContainer__team--item {
+  margin-top: 15px;
+}
+
+.mainContainer__team--border {
+  border: 3px white solid;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/*----Fin nuestro equipo----*/
+
+/*-----Footter-----*/
+.footer {
+  width: 100%;
+  background-color: var(--azulOscuro);
+  border-top: 5px solid #e66f43;
+}
+
+.footer__info {
+  margin: 15px 0;
+}
+
+.footer__info--footertitle {
+  color: var(--naranja);
+}
+
+.footer__info--paragraph {
+  margin-bottom: 0;
+  /*Boostrap me pone margin bot por defecto, se lo reseteo*/
+}
+
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.redes__li {
+  margin-top: 10px;
+}
+
+.redes__link {
+  width: 25px;
+  height: 25px;
+  background-color: var(--naranja);
+  border-radius: 100%;
+  display: flex;
+}
+
+.redes__link:hover{
+  background-color: #FF5D00;
+}
+
+.redes__imgfacebook,
+.redes__imgtwitter,
+.redes__imginstagram {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+
+.footer__cokies {
+  width: 100%;
+  background-color: var(--naranja);
+  text-align: center;
+}
+
+.footer__link {
+  text-align: center;
+  color: white;
+}
+/*-----Fin del Footter-----*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+  .header {
+    padding: 30px;
+  }
+
+  .header__logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .header__burguer {
+    width: 60px;
+    height: 42px;
+  }
+
+  .header__burguerline {
+    height: 5px;
+  }
+
+  .header__text {
+    margin-top: 30px;
+  }
+
+
+  .header__pildora--a {
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .header__author {
+    font-size: 25px;
+  }
+
+  .header__pildora--a {
+    font-size: 26px;
+  }
+
+  .header__menuli {
+    font-size: 40px;
+  }
+
+  /*---Nuestros valores-----*/
+  .mainContainer__valores {
+    padding: 35px 30px;
+  }
+
+  .mainContainer__valores--border {
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    margin-bottom: 15px;
+  }
+  /*---Fin de Nuestros valores-----*/
+
+  /*---Obras-----*/
+  .mainContainer__obra--item {
+    height: 200px;
+  }
+
+  .mainContainer__obra--text {
+    padding-top: 20px;
+  }
+  /*---Fin de Obras-----*/
+
+  /*----Nuestro equipo----*/
+  .mainContainer__team {
+    padding: 35px 30px;
+  }
+
+  .mainContainer__team--item {
+    margin-top: 30px;
+  }
+
+  .mainContainer__team--border {
+    border: 5px white solid;
+    margin-bottom: 20px;
+  }
+  /*----Fin nuestro equipo----*/
+
+  /*-----Footter-----*/
+  .footer__info {
+    margin: 35px 0px;
+  }
+
+  .redes {
+    width: 12%;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer__cokies {
+    padding: 10px;
+  }
+}
+/*Termina la tablet*/
+
+/*Escritorio*/
+@media (min-width: 960px) {
+  .header {
+    padding: 75px;
+  }
+
+  .header__tittle {
+    font-size: 87px;
+  }
+
+  .header__logo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .header__burguer {
+    display: none;
+  }
+
+  .header__text {
+    margin-top: 30px;
+  }
+
+  .header__author {
+    font-size: 25px;
+  }
+
+  .header__pildora--a {
+    font-size: 26px;
+    padding: 15px;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__menumenu {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 770px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+
+  .header__menuli {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__menulia {
+    color: var(--naranja);
+  }
+
+  /*---Nuestros valores-----*/
+
+
+  .mainContainer__valores--item {
+    padding:20px;
+  }
+
+  .mainContainer__valores {
+    padding: 35px 30px;
+  }
+
+  .mainContainer__valores--border {
+    border: 8px solid white;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .mainContainer__valores--subtitle {
+    font-size: 24px;
+  }
+
+  /*---Fin de Nuestros valores-----*/
+
+  /*---Obras-----*/
+  .mainContainer__obra--item {
+    height: 400px;
+  }
+
+  .mainContainer__obra--text {
+    padding: 55px;
+  }
+
+  .mainContainer__obra--textTittle {
+    font-size: 25px;
+  }
+
+  .mainContainer__obra--subtext {
+    font-size: 20px;
+  }
+
+  /*---Fin de Obras-----*/
+
+  /*----Nuestro equipo----*/
+  .mainContainer__team {
+    padding: 75px 90px;
+  }
+
+  .mainContainer__team--title {
+    font-size: 50px;
+  }
+
+  .mainContainer__team--item {
+    margin-top: 70px;
+    padding: 30px;
+  }
+
+  .mainContainer__team--name {
+    font-size: 35px;
+  }
+
+  .mainContainer__team--description {
+    font-size: 20px;
+  }
+
+  .mainContainer__team--border {
+    border: 5px white solid;
+    margin-bottom: 20px;
+  }
+  /*----Fin nuestro equipo----*/
+
+  /*-----Footter-----*/
+  .footer__info {
+    margin: 70px 0px;
+  }
+
+  .footer__info--footertitle {
+    font-size: 40px;
+  }
+
+  .footer__info--paragraph {
+    font-size: 20px;
+  }
+
+  .redes__link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .redes__imgfacebook,
+  .redes__imgtwitter,
+  .redes__imginstagram {
+    width: 25px;
+    height: 25px;
+  }
+}
+/*Termina escritorio*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para Css-->
+    <link href="css/style.css"  rel="stylesheet">
+    <!--Link de la fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="burguer">
+            <div class="burguer__line"></div>
+            <div class="burguer__line"></div>
+            <div class="burguer__line"></div>
+        </label>
+        <nav class="menu">
+            <ul class="menu__menu">
+              <li class="menu__li"><a href="../index.html">home</a></li>
+              <li class="menu__li"><a href="#">partners</a></li>
+              <li class="menu__li"><a href="#">contactos</a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class="map">
+        <h1 class="map__text">Let’s make something awesome together</h1>
+    </div>
+    <section class="form">
+        <form action="#" method="post">
+            <input class="name" type="text" name="Nombre" placeholder="Name" maxlength="60">
+            <input class="mail" type="mail" name="Nombre" placeholder="Mail" maxlength="120">
+            <textarea class="text" name="Nombre" placeholder="Text" maxlength="300"></textarea>
+            <input class="send" type="submit" value="send">
+        </form>
+    </section>
+</body>
+</html>
